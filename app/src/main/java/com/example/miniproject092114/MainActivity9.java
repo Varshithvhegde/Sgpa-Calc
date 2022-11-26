@@ -25,7 +25,7 @@ public class MainActivity9 extends AppCompatActivity {
         s83=(EditText) findViewById(R.id.S83);
         s84=(EditText) findViewById(R.id.S84);
         s85=(EditText) findViewById(R.id.S85);
-        calculate8=(Button)findViewById(R.id.CALCULATE8);
+        calculate8=(Button)findViewById(R.id.CALCULATE5);
         sgpa8=(EditText) findViewById(R.id.SGPA2);
         grade81=(EditText)findViewById(R.id.GRADE81);
         grade82=(EditText)findViewById(R.id.GRADE82);
@@ -62,7 +62,7 @@ public class MainActivity9 extends AppCompatActivity {
                 vv85=String.valueOf(v85);
                 grade85.setText(String.valueOf(checkgrade(String.valueOf(vv85))));
 
-                sgpa8.setText(String.valueOf ((v81*3)+(v82*3)+(v83*8)+(v84*1)+(v85*3)/18));
+                sgpa8.setText(String.valueOf (((v81*3)+(v82*3)+(v83*8)+(v84*1)+(v85*3))/18));
             }
         });
 

@@ -2,34 +2,45 @@ package com.example.miniproject092114;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity6 extends AppCompatActivity {
 
     EditText s51,s52,s53,s54,s55,s56,s57,s58,s59,sgpa5;
-    Button calculate5;
+    Button calculate5,edit;
     EditText grade51,grade52,grade53,grade54,grade55,grade56,grade57,grade58,grade59;
     float value51,value52,value53,value54,value55,value56,value57,value58,value59;
     float v51,v52,v53,v54,v55,v56,v57,v58,v59;
     String vv51,vv52,vv53,vv54,vv55,vv56,vv57,vv58,vv59;
+    String[] subnames ={"18MAT11","18PHY12","18ELE13","18CIV14","18EGDL15","18PHYL16","18ELEL17","18EGH18","18MAT21","18CHE22","18CPS23","18ELN24","18ME25","18CHEL26",
+            "18CPL27","18EGH28","18**31","18**32","18**33","18**34","18**35","18**36","18**37","18**38","18***39","18**41","18**42",
+            "18**43","18**44","18**45","18**46","18**47","18**48","18***49"};
+    LinearLayout lin ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
-        s51=(EditText) findViewById(R.id.S81);
-        s52=(EditText) findViewById(R.id.S82);
-        s53=(EditText) findViewById(R.id.S83);
-        s54=(EditText) findViewById(R.id.S84);
-        s55=(EditText) findViewById(R.id.S85);
-        s56=(EditText) findViewById(R.id.S76);
-        s57=(EditText) findViewById(R.id.S77);
-        s58=(EditText) findViewById(R.id.S68);
+        s51=(EditText) findViewById(R.id.S51);
+        s52=(EditText) findViewById(R.id.S52);
+        s53=(EditText) findViewById(R.id.S53);
+        s54=(EditText) findViewById(R.id.S54);
+        s55=(EditText) findViewById(R.id.S55);
+        s56=(EditText) findViewById(R.id.S56);
+        s57=(EditText) findViewById(R.id.S57);
+        s58=(EditText) findViewById(R.id.S58);
         s59=(EditText) findViewById(R.id.S59);
         calculate5=(Button)findViewById(R.id.CALCULATE5);
+        edit=(Button) findViewById(R.id.subs);
         sgpa5=(EditText) findViewById(R.id.SGPA2);
         grade51=(EditText)findViewById(R.id.GRADE51);
         grade52=(EditText)findViewById(R.id.GRADE52);
@@ -40,7 +51,7 @@ public class MainActivity6 extends AppCompatActivity {
         grade57=(EditText)findViewById(R.id.GRADE57);
         grade58=(EditText)findViewById(R.id.GRADE58);
         grade59=(EditText)findViewById(R.id.GRADE59);
-
+        lin=(LinearLayout) findViewById(R.id.linear);
 
 
         calculate5.setOnClickListener(new View.OnClickListener() {
@@ -93,6 +104,35 @@ public class MainActivity6 extends AppCompatActivity {
 
 
                 sgpa5.setText(String.valueOf (((v51*3)+(v52*4)+(v53*4)+(v54*3)+(v55*3)+(v56*3)+(v57*2)+(v58*2)+(v59*1))/25));
+            }
+        });
+
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LayoutInflater inflater = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                View layout = inflater.inflate(R.layout.sem3, null);
+                Spinner spinner = (Spinner)layout.findViewById(R.id.drop);
+
+                ArrayAdapter aa = new ArrayAdapter(getApplicationContext(),android.R.layout.simple_spinner_item,subnames);
+                aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinner.setAdapter(aa);
+                spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    @Override
+                    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                        Toast.makeText(getApplicationContext(), subnames[i], Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onNothingSelected(AdapterView<?> adapterView) {
+
+                    }
+                });
+                lin.addView(layout);
+
+
+
+
             }
         });
 

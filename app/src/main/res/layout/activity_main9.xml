@@ -1,343 +1,390 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#F6F6FA"
-    tools:context=".MainActivity9">
+<ScrollView android:layout_width="match_parent"
 
-    <TextView
-        android:id="@+id/sem66"
-        android:layout_width="220dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginRight="96dp"
-        android:background="#120101"
-        android:text=" SEMESTER 8"
-        android:textColor="#EDDFDF"
-        android:textColorHighlight="#E6D8D8"
-        android:textColorHint="#DCD4D4"
-        android:textColorLink="#F1E8E8"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6FA"
+        android:orientation="vertical"
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="26dp"
-        android:text="18**81"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+        tools:context=".MainActivity7">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
-        android:text="18**82X"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            android:textAlignment="center"
+            android:background="#120101"
+            android:text=" SEMESTER 8"
+            android:textColor="#EDDFDF"
+            android:textColorHighlight="#E6D8D8"
+            android:textColorHint="#DCD4D4"
+            android:textColorLink="#F1E8E8"
+            android:textSize="34sp"
+            android:gravity="center_horizontal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
-        android:text="18***83"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
-        android:text="18***84"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="100dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="30dp"
-        android:text="18***85"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                    android:layout_marginTop="12dp"
+                    android:text="SUBCODE"
+                    android:textColor="#0C0C0C"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sem66" />
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="39dp"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="12dp"
+                    android:text="MARKS"
+                    android:textColor="#151414"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView21"
+                    app:layout_constraintTop_toBottomOf="@+id/sem66" />
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="77dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="12dp"
+                    android:text="GRADE"
+                    android:textColor="#0B0000"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/textView22"
+                    app:layout_constraintTop_toBottomOf="@+id/sem66" />
+            </LinearLayout>
 
-    <EditText
-        android:id="@+id/S81"
-        android:layout_width="117dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="00"
-        android:textColor="#100000"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
 
-    <EditText
-        android:id="@+id/S82"
-        android:layout_width="117dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="00"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/S81" />
 
-    <EditText
-        android:id="@+id/S83"
-        android:layout_width="117dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="27dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="00"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/S82" />
+                    android:layout_marginTop="16dp"
+                    android:text="18**81"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                <EditText
+                    android:id="@+id/S81"
+                    android:layout_width="117dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="00"
+                    android:textColor="#100000"
+                    app:layout_constraintStart_toEndOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
-    <EditText
-        android:id="@+id/S84"
-        android:layout_width="117dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="00"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/S83" />
+                <EditText
+                    android:id="@+id/GRADE81"
+                    android:layout_width="90dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="G"
+                    android:inputType="textPersonName"
+                    android:textColor="#170101"
+                    android:textColorHighlight="#130101"
+                    android:textColorHint="#FBF1F1"
+                    android:textColorLink="#120000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/S31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
 
-    <EditText
-        android:id="@+id/S85"
-        android:layout_width="117dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="00"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/S84" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/CALCULATE8"
-        android:layout_width="140dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="40dp"
-        android:text="CALCULATE"
-        android:textColor="@color/white"
-        app:backgroundTint="#150000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/S85" />
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
 
-    <EditText
-        android:id="@+id/SGPA2"
-        android:layout_width="90dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:ems="10"
-        android:hint="SGPA"
-        android:inputType="textPersonName"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView35"
-        app:layout_constraintTop_toBottomOf="@+id/S85" />
+                    android:layout_marginTop="30dp"
+                    android:text="18**82X"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                <EditText
+                    android:id="@+id/S82"
+                    android:layout_width="117dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="18dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/textView6"
+                    app:layout_constraintTop_toBottomOf="@+id/S31" />
+                <EditText
+                    android:id="@+id/GRADE82"
+                    android:layout_width="90dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:ems="10"
+                    android:hint="G"
+                    android:inputType="textPersonName"
+                    android:textColor="#170101"
+                    android:textColorHighlight="#130101"
+                    android:textColorHint="#F3EEEE"
+                    android:textColorLink="#120000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toEndOf="@+id/S32"
+                    app:layout_constraintTop_toBottomOf="@+id/GRADE31" />
 
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="27dp"
-        android:text="SUBCODE"
-        android:textColor="#171616"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sem66" />
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="39dp"
-        android:layout_marginLeft="39dp"
-        android:layout_marginTop="27dp"
-        android:text="MARKS"
-        android:textColor="#151414"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/textView33"
-        app:layout_constraintTop_toBottomOf="@+id/sem66" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
-        android:text="SGPA="
-        android:textColor="#121111"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/CALCULATE8"
-        app:layout_constraintTop_toBottomOf="@+id/S85" />
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
 
-    <TextView
-        android:id="@+id/gradesem8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="27dp"
-        android:text="GRADE"
-        android:textColor="#0B0000"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/textView34"
-        app:layout_constraintTop_toBottomOf="@+id/sem66" />
+                    android:layout_marginTop="30dp"
+                    android:text="18***83"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+                <EditText
+                    android:id="@+id/S83"
+                    android:layout_width="117dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="18dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/S32" />
+                <EditText
+                    android:id="@+id/GRADE83"
+                    android:layout_width="90dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:ems="10"
+                    android:hint="G"
+                    android:inputType="textPersonName"
+                    android:textColor="#170101"
+                    android:textColorHighlight="#130101"
+                    android:textColorHint="#F6F4F4"
+                    android:textColorLink="#120000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toEndOf="@+id/S33"
+                    app:layout_constraintTop_toBottomOf="@+id/GRADE32" />
 
-    <EditText
-        android:id="@+id/GRADE81"
-        android:layout_width="90dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="G"
-        android:inputType="textPersonName"
-        android:textColor="#170101"
-        android:textColorHighlight="#130101"
-        android:textColorHint="#EAE3E3"
-        android:textColorLink="#120000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/S81"
-        app:layout_constraintTop_toBottomOf="@+id/gradesem8" />
+            </LinearLayout>
 
-    <EditText
-        android:id="@+id/GRADE82"
-        android:layout_width="90dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:hint="G"
-        android:inputType="textPersonName"
-        android:textColor="#170101"
-        android:textColorHighlight="#130101"
-        android:textColorHint="#EAE3E3"
-        android:textColorLink="#120000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/S82"
-        app:layout_constraintTop_toBottomOf="@+id/GRADE81" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/GRADE83"
-        android:layout_width="90dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:hint="G"
-        android:inputType="textPersonName"
-        android:textColor="#170101"
-        android:textColorHighlight="#130101"
-        android:textColorHint="#EAE3E3"
-        android:textColorLink="#120000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/S83"
-        app:layout_constraintTop_toBottomOf="@+id/GRADE82" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
 
-    <EditText
-        android:id="@+id/GRADE84"
-        android:layout_width="90dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:hint="G"
-        android:inputType="textPersonName"
-        android:textColor="#170101"
-        android:textColorHighlight="#130101"
-        android:textColorHint="#EAE3E3"
-        android:textColorLink="#120000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/S84"
-        app:layout_constraintTop_toBottomOf="@+id/GRADE83" />
+                    android:layout_marginTop="30dp"
+                    android:text="18***84"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <EditText
-        android:id="@+id/GRADE85"
-        android:layout_width="90dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:hint="G"
-        android:inputType="textPersonName"
-        android:textColor="#170101"
-        android:textColorHighlight="#130101"
-        android:textColorHint="#EAE3E3"
-        android:textColorLink="#120000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/S85"
-        app:layout_constraintTop_toBottomOf="@+id/GRADE84" />
+                <EditText
+                    android:id="@+id/S84"
+                    android:layout_width="117dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="18dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/S33" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <EditText
+                    android:id="@+id/GRADE84"
+                    android:layout_width="90dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    android:ems="10"
+                    android:hint="G"
+                    android:inputType="textPersonName"
+                    android:textColor="#170101"
+                    android:textColorHighlight="#130101"
+                    android:textColorHint="#FAF6F6"
+                    android:textColorLink="#120000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toEndOf="@+id/S34"
+                    app:layout_constraintTop_toBottomOf="@+id/GRADE33" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+
+                    android:layout_marginTop="30dp"
+                    android:text="18***85"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <EditText
+                    android:id="@+id/S85"
+                    android:layout_width="117dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="18dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="00"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/S34" />
+
+                <EditText
+                    android:id="@+id/GRADE85"
+                    android:layout_width="90dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="G"
+                    android:inputType="textPersonName"
+                    android:textColor="#170101"
+                    android:textColorHighlight="#130101"
+                    android:textColorHint="#ECE8E8"
+                    android:textColorLink="#120000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.428"
+                    app:layout_constraintStart_toEndOf="@+id/S35"
+                    app:layout_constraintTop_toBottomOf="@+id/GRADE34" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <Button
+
+                android:id="@+id/subs"
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+
+                android:text="ADD BACK SUBJECTS"
+                android:textColor="@color/white"
+                app:backgroundTint="#150000"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/CALCULATE5"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="4dp"
+                android:text="CALCULATE"
+                android:textColor="@color/white"
+                app:backgroundTint="#150000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="4dp"
+                android:text="SGPA="
+                android:textColor="#131313"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/CALCULATE3"
+                app:layout_constraintTop_toBottomOf="@+id/S39" />
+            <EditText
+                android:id="@+id/SGPA2"
+                android:layout_width="90dp"
+                android:layout_height="48dp"
+
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="SGPA"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/S39" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
